@@ -12,7 +12,9 @@ Use anaconda env for setup. (--create requirements.txt file--)
 ```
 conda create --name clustering_conda
 conda activate clustering_conda
-pip install requirements.txt
+
+conda install --file requirements.txt
+#pip install requirements.txt
 ```
 
 To run the code successfully, you will need (just install the most recent version)
