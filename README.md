@@ -4,6 +4,8 @@ We put the code for constructing **Concept Interaction Graph** and run experimen
 
 We also put the datasets here: **Chinese News Same Event dataset (CNSE)** and **Chinese News Same Story dataset (CNSS)**. 
 
+*Note*: clone the repo with git-lfs to not ruin the large files!
+
 Requirement
 -------------------
 To run the code successfully, you will need (just install the most recent version)
@@ -16,6 +18,8 @@ How to use
 **Run experiments: ** Please go to src/models/CCIG, and run script.sh.
 
 **Process data: ** Please go to src/models/CCIG/data/ and run feature_extractor.py.
+
+*Note*: Comment out files that don't exist plus the if statement in resource_loader.load_IDF()
 
 **Datasets:** The CNSE dataset in the paper is in data/raw/event-story-cluster/same_event_doc_pair.txt,   and the CNSS dataset is located in data/raw/event-story-cluster/same_story_doc_pair.txt.
 
