@@ -6,24 +6,40 @@ We also put the datasets here: **Chinese News Same Event dataset (CNSE)** and **
 
 *Note*: clone the repo with git-lfs to not ruin the large files!
 
-Requirement
+Requirements
 -------------------
+Use anaconda env for setup. (--create requirements.txt file--)
+```
+conda create --name clustering_conda
+conda activate clustering_conda
+pip install requirements.txt
+```
+
 To run the code successfully, you will need (just install the most recent version)
 
 - Pytorch
-- Graph-tool
+- Graph-tool (builds easily on Anaconda)
+
 
 How to use
 ------------------
-**Run experiments:** Please go to src/models/CCIG, and run script.sh.
-
-**Process data:** Please go to src/models/CCIG/data/ and run feature_extractor.py.
+**Process data:** Go to src/models/CCIG/data/ and run feature_extractor.py.
 
 *Note*: Comment out files that don't exist plus the if statement in resource_loader.load_IDF()
 
+```
+cd src/models/CCIG/data
+python feature_extractor.py
+```
+**Run experiments:** 
+```
+cd src/models/CCIG
+sh script.sh
+```
+
 **Datasets:** The CNSE dataset in the paper is in data/raw/event-story-cluster/same_event_doc_pair.txt,   and the CNSS dataset is located in data/raw/event-story-cluster/same_story_doc_pair.txt.
 
-**CIG visualization: ** we put some figures of CIG with community detection in the folder ``CIG visualization by graph-tool''.
+**CIG visualization:** we put some figures of CIG with community detection in the folder ``CIG visualization by graph-tool''.
 
 
 Project Organization
