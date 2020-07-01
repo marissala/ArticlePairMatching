@@ -15,9 +15,9 @@ To run the code successfully, you will need (just install the most recent versio
 
 How to use
 ------------------
-**Run experiments: ** Please go to src/models/CCIG, and run script.sh.
+**Run experiments:** Please go to src/models/CCIG, and run script.sh.
 
-**Process data: ** Please go to src/models/CCIG/data/ and run feature_extractor.py.
+**Process data:** Please go to src/models/CCIG/data/ and run feature_extractor.py.
 
 *Note*: Comment out files that don't exist plus the if statement in resource_loader.load_IDF()
 
